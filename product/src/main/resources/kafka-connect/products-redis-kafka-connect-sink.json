@@ -1,0 +1,17 @@
+{
+  "name": "products-redis-sink-connector",
+  "config": {
+    "connector.class": "io.github.jaredpetersen.kafkaconnectredis.sink.RedisSinkConnector",
+    "key.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "key.converter.key.subject.name.strategy": "io.confluent.kafka.serializers.subject.TopicRecordNameStrategy",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.value.subject.name.strategy": "io.confluent.kafka.serializers.subject.TopicRecordNameStrategy",
+    "tasks.max": "1",
+    "topics": "products",
+    "redis.uri": "redis://192.168.1.232:6379",
+    "redis.password": "sOmE_sEcUrE_pAsS",
+    "redis.cluster.enabled": false
+  }
+}

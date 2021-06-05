@@ -1,0 +1,466 @@
+version: '2.1'
+services:
+  cp-zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_MY_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - microservicesdemo
+    volumes:
+      - ../container_mount/zookeeper/data:/var/lib/zookeeper/data
+      - ../container_mount/zookeeper/log:/var/lib/zookeeper/log
+
+  cp-broker:
+    image: confluentinc/cp-kafka:latest
+    hostname: broker
+    container_name: broker
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-zookeeper:
+        condition: service_started
+    healthcheck:
+      test:
+        [ "CMD-SHELL", "kafka-topics --list --zookeeper zookeeper 2181" ]
+      interval: 30s
+      timeout: 10s
+      retries: 4
+    ports:
+      - "29092:29092"
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: broker:29092
+      CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
+      CONFLUENT_METRICS_ENABLE: 'false'
+    volumes:
+      - ../container_mount/kafka/broker1/data:/var/lib/kafka/data
+
+  cp-schema-registry:
+    image: confluentinc/cp-schema-registry:latest
+    hostname: schema-registry
+    container_name: schema-registry
+    restart: on-failure
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-zookeeper:
+        condition: service_started
+      cp-broker:
+        condition: service_healthy
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: 'zookeeper:2181'
+
+  jdbc-connect:
+    image: confluentinc/cp-kafka-connect:latest
+    container_name: jdbc-connect
+    hostname: jdbc-connect
+    restart: always
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+      cp-schema-registry:
+        condition: service_started
+      cp-zookeeper:
+        condition: service_started
+    ports:
+      - "8084:8084"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
+      CONNECT_REST_ADVERTISED_HOST_NAME: jdbc-connect
+      CONNECT_REST_PORT: 8084
+      CONNECT_GROUP_ID: compose-jdbc-connect-group
+      CONNECT_CONFIG_STORAGE_TOPIC: docker-jdbc-connect-configs
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_FLUSH_INTERVAL_MS: 10000
+      CONNECT_OFFSET_STORAGE_TOPIC: docker-jdbc-connect-offsets
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_TOPIC: docker-jdbc-connect-status
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_KEY_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_INTERNAL_KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_INTERNAL_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      CONNECT_PLUGIN_PATH: '/usr/share/java,/etc/kafka-connect/jars'
+    volumes:
+      - ../container_mount/plugins/confluentinc-kafka-connect-jdbc-10.0.1/lib:/etc/kafka-connect/jars
+
+  postgres:
+    image: postgres
+    hostname: postgres
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=postgres
+      - PGDATA=/pgdata
+    volumes:
+     - ../container_mount/pgdata:/pgdata
+
+#  users-service:
+#    hostname: users-service
+#    image: sravankf244/users-service:latest
+#    container_name: users-service
+#    environment:
+#      MAX_HEAP_SIZE: 512m
+#      LOG_PATH: /data/logs
+#    ports:
+#      - "9001:9001"
+#    depends_on:
+#      - postgres
+#    volumes:
+#      - /Users/sravantatikonda/POC/container_mount/logs:/data/logs
+
+#  users-search-service:
+#    hostname: users-search-service
+#    image: sravankf244/users-search-service:latest
+#    container_name: users-search-service
+#    environment:
+#      MAX_HEAP_SIZE: 512m
+#      LOG_PATH: /data/logs
+#    ports:
+#      - "9003:9003"
+#    volumes:
+#      - /Users/sravantatikonda/POC/container_mount/logs:/data/logs
+#
+#  orders-service:
+#    hostname: orders-service
+#    build: ./orders-service
+#    image: sravankf244/orders-service:latest
+#    container_name: orders-service
+#    environment:
+#      MAX_HEAP_SIZE: 512m
+#      LOG_PATH: /data/logs
+#    ports:
+#      - "9002:9002"
+#    volumes:
+#      - /Users/sravantatikonda/POC/container_mount/orders:/data/orders
+#      - /Users/sravantatikonda/POC/container_mount/logs:/data/logs
+
+  mongo:
+    image: "mongo:latest"
+    container_name: mongo
+    command: --replSet rs0 --smallfiles --oplogSize 128
+    ports:
+      - "27017:27017"
+    restart: always
+    networks:
+      - microservicesdemo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=123
+      - MONGO_INITDB_DATABASE=orders
+    volumes:
+      - /Users/sravantatikonda/POC/container_mount/mongodb:/data/db
+
+  mongo-express:
+    image: mongo-express
+    networks:
+      - microservicesdemo
+    depends_on:
+      mongo:
+        condition: service_started
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=admin
+      - ME_CONFIG_BASICAUTH_USERNAME=mongo
+      - ME_CONFIG_BASICAUTH_PASSWORD=123
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    hostname: kafdrop-ui
+    container_name: kafdrop-ui
+    networks:
+      - microservicesdemo
+    restart: always
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: 'broker:29092'
+
+  file-connect:
+    image: streamthoughts/kafka-connect-file-pulse:latest
+    container_name: file-connect
+    hostname: file-connect
+    restart: on-failure
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+      cp-schema-registry:
+        condition: service_started
+    ports:
+      - "8083:8083"
+      - "8000:8000"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
+      CONNECT_REST_ADVERTISED_HOST_NAME: file-connect
+      CONNECT_REST_PORT: 8083
+      CONNECT_GROUP_ID: compose-file-connect-group
+      CONNECT_CONFIG_STORAGE_TOPIC: docker-file-connect-configs
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_FLUSH_INTERVAL_MS: 10000
+      CONNECT_OFFSET_STORAGE_TOPIC: docker-file-connect-offsets
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_TOPIC: docker-file-connect-status
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
+      CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      CONNECT_INTERNAL_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_INTERNAL_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      # kafka-connect-file-pulse is installed as a confluent-hub component
+      CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components/,/tmp/kafka-connect/examples/"
+      CONNECT_LOG4J_ROOT_LOGLEVEL: "INFO"
+      CONNECT_LOG4J_LOGGERS: org.apache.zookeeper=ERROR,org.I0Itec.zkclient=ERROR,org.reflections=ERROR
+      # Uncomment for debugging the connector during development cycle
+      # KAFKA_OPTS: "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
+    volumes:
+      - ../container_mount/orders/:/tmp/kafka-connect/orders
+      - ../container_mount/products/:/tmp/kafka-connect/products
+
+  mongo-connect:
+    image: confluentinc/cp-kafka-connect:latest
+    hostname: mongo-connect
+    container_name: mongo-connect
+    restart: on-failure
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+      cp-schema-registry:
+        condition: service_started
+    ports:
+      - "8085:8085"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
+      CONNECT_REST_ADVERTISED_HOST_NAME: connect
+      CONNECT_REST_PORT: 8085
+      CONNECT_GROUP_ID: compose-connect-group
+      CONNECT_CONFIG_STORAGE_TOPIC: docker-connect-configs
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_FLUSH_INTERVAL_MS: 10000
+      CONNECT_OFFSET_STORAGE_TOPIC: docker-connect-offsets
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_TOPIC: docker-connect-status
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_INTERNAL_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_INTERNAL_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_LOG4J_ROOT_LOGLEVEL: "INFO"
+      CONNECT_LOG4J_LOGGERS: "org.apache.kafka.connect.runtime.rest=WARN,org.reflections=ERROR,com.mongodb.kafka=DEBUG"
+      CONNECT_PLUGIN_PATH: /usr/share/confluent-hub-components
+      CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      # Assumes image is based on confluentinc/kafka-connect-datagen:latest which is pulling 5.2.2 Connect image
+      CLASSPATH: /usr/share/java/monitoring-interceptors/monitoring-interceptors-5.2.2.jar
+      CONNECT_PRODUCER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor"
+      CONNECT_CONSUMER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringConsumerInterceptor"
+    command: "bash -c 'if [ ! -d /usr/share/confluent-hub-components/confluentinc-kafka-connect-datagen ]; then echo \"WARNING: Did not find directory for kafka-connect-datagen (did you remember to run: docker-compose up -d --build ?)\"; fi ; /etc/confluent/docker/run'"
+    volumes:
+      - ../container_mount/plugins/mongodb-kafka-connect-mongodb-0.2:/usr/share/confluent-hub-components/kafka-connect-mongodb
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+    container_name: elasticsearch
+    networks:
+      - microservicesdemo
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - ../container_mount/elasticsearch-data:/usr/share/elasticsearch/data
+
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.4.0
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+
+  elastic-search-connect:
+    image: confluentinc/cp-kafka-connect
+    container_name: elastic-search-connect
+    hostname: elastic-search-connect
+    restart: on-failure
+    networks:
+      - microservicesdemo
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+      cp-schema-registry:
+        condition: service_started
+      cp-zookeeper:
+        condition: service_started
+    ports:
+      - "8086:8086"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
+      CONNECT_REST_ADVERTISED_HOST_NAME: elastic-search-connect
+      CONNECT_REST_PORT: 8086
+      CONNECT_GROUP_ID: compose-elastic-search-connect-group
+      CONNECT_CONFIG_STORAGE_TOPIC: docker-elastic-search-connect-configs
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_FLUSH_INTERVAL_MS: 10000
+      CONNECT_OFFSET_STORAGE_TOPIC: docker-elastic-search-connect-offsets
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_TOPIC: docker-elastic-search-connect-status
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_KEY_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_INTERNAL_KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_INTERNAL_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      CONNECT_PLUGIN_PATH: '/usr/share/java,/usr/share/confluent-hub-components'
+    volumes:
+      - ../container_mount/plugins/kafka-connect-elasticsearch-master:/usr/share/confluent-hub-components
+
+  mysql:
+    image: mysql:5.7.20
+    container_name: mysql
+    networks:
+      - microservicesdemo
+    hostname: mysql
+    restart: on-failure
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=product
+    ports:
+      - 3306:3306
+    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
+    volumes:
+      - ../container_mount/mysql/:/var/lib/mysql/
+
+  sqlserver:
+    container_name: sqlserver
+    hostname: sqlserver
+    image: microsoft/mssql-server-linux:2017-latest
+    networks:
+      - microservicesdemo
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "change_this_password"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - ../container_mount/sqlserver/sqlsystem:/var/opt/mssql/
+      - ../container_mount/sqlserver/sqldata:/var/opt/sqlserver/data
+      - ../container_mount/sqlserver/sqllog:/var/opt/sqlserver/log
+      - ../container_mount/sqlserver/sqlbackup:/var/opt/sqlserver/backup
+
+  redis:
+    image: "redis:alpine"
+    container_name: redis
+    networks:
+      - microservicesdemo
+    hostname: redis
+    command: redis-server --requirepass sOmE_sEcUrE_pAsS
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+    volumes:
+      - ../container_mount/redis/redis-data:/var/lib/redis
+      - ../container_mount/redis/redis.conf:/usr/local/etc/redis/redis.conf
+
+  redis-connect:
+    image: confluentinc/cp-kafka-connect
+    container_name: redis-connect
+    networks:
+      - microservicesdemo
+    hostname: redis-connect
+    restart: on-failure
+    depends_on:
+      cp-broker:
+        condition: service_healthy
+      cp-schema-registry:
+        condition: service_started
+      cp-zookeeper:
+        condition: service_started
+    ports:
+      - "8087:8087"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
+      CONNECT_REST_ADVERTISED_HOST_NAME: redis-connect
+      CONNECT_REST_PORT: 8087
+      CONNECT_GROUP_ID: compose-redis-connect-group
+      CONNECT_CONFIG_STORAGE_TOPIC: docker-redis-connect-configs
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_FLUSH_INTERVAL_MS: 10000
+      CONNECT_OFFSET_STORAGE_TOPIC: docker-redis-connect-offsets
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_TOPIC: docker-redis-connect-status
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_KEY_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+      CONNECT_INTERNAL_KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_INTERNAL_VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
+      CONNECT_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      CONNECT_PLUGIN_PATH: '/usr/share/java,/usr/share/confluent-hub-components'
+    volumes:
+      - ../container_mount/plugins/kafka-connect-redis-main:/usr/share/confluent-hub-components
+
+
+networks:
+  microservicesdemo:
+    external: false
+    name: microservicesdemo
+
+
+
+#mkdir -p zookeeper/data
+
+chown -R 1000:1000 zookeeper/data
+chown -R 1000:1000 zookeeper/logs

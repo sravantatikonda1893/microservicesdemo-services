@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+<order id="935678b4-8abd-4a25-bfc7-30c1b7fd58dc">
+<FileCreatedDateTime>20200413041026</FileCreatedDateTime>
+<Firstname>Isabella</Firstname>
+<Lastname>Richards</Lastname>
+<Address>3871 Galactica Drive</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99517</Zip>
+<orderTotal>575</orderTotal>
+<orderItems>89</orderItems>
+<expectedDelivery>20200424082636</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="b4616954-7f29-4e28-a43e-3139e1eb17b2">
+<FileCreatedDateTime>20200424055449</FileCreatedDateTime>
+<Firstname>Reece</Firstname>
+<Lastname>Ortega</Lastname>
+<Address>5620 Lilly Street</Address>
+<City>Panama City</City>
+<State>FL</State>
+<Zip>32404</Zip>
+<orderTotal>291</orderTotal>
+<orderItems>29</orderItems>
+<expectedDelivery>20200629032843</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>kobayasi@verizon.net</Email>
+</order>
+<order id="d53fd1c2-8d46-4a9c-a5d1-4b30229a7f5d">
+<FileCreatedDateTime>20200119075152</FileCreatedDateTime>
+<Firstname>Waylon</Firstname>
+<Lastname>Olson</Lastname>
+<Address>7296 West Wedington Drive</Address>
+<City>Fayetteville</City>
+<State>AR</State>
+<Zip>72704</Zip>
+<orderTotal>884</orderTotal>
+<orderItems>19</orderItems>
+<expectedDelivery>20200325044746</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>dieman@verizon.net</Email>
+</order>
+<order id="348ae6b6-9b79-4b94-ba5c-a7e31ae39f20">
+<FileCreatedDateTime>20200724054012</FileCreatedDateTime>
+<Firstname>Essence</Firstname>
+<Lastname>House</Lastname>
+<Address>702 Plantation Circle</Address>
+<City>Panama City</City>
+<State>FL</State>
+<Zip>32404</Zip>
+<orderTotal>567</orderTotal>
+<orderItems>80</orderItems>
+<expectedDelivery>20200721083130</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>oster@sbcglobal.net</Email>
+</order>
+<order id="4bc5c356-d576-4983-8f69-00df54bb451e">
+<FileCreatedDateTime>20200615022137</FileCreatedDateTime>
+<Firstname>Glenn</Firstname>
+<Lastname>Terry</Lastname>
+<Address>2209 Florida Avenue</Address>
+<City>Savannah</City>
+<State>GA</State>
+<Zip>31404</Zip>
+<orderTotal>341</orderTotal>
+<orderItems>64</orderItems>
+<expectedDelivery>20200626044511</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>barjam@me.com</Email>
+</order>
+<order id="3d0142ce-f847-4185-ab84-1446413444ae">
+<FileCreatedDateTime>20200722031520</FileCreatedDateTime>
+<Firstname>Finley</Firstname>
+<Lastname>Coleman</Lastname>
+<Address>4511 43rd Place Northwest</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20016</Zip>
+<orderTotal>145</orderTotal>
+<orderItems>54</orderItems>
+<expectedDelivery>20200128025329</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="949f8da2-38c5-4b74-b4ec-16b7a15ddd9a">
+<FileCreatedDateTime>20200416081235</FileCreatedDateTime>
+<Firstname>Amiah</Firstname>
+<Lastname>Ballard</Lastname>
+<Address>24020 Reese Road</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99567</Zip>
+<orderTotal>45</orderTotal>
+<orderItems>73</orderItems>
+<expectedDelivery>20200220034853</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="636339f2-64f7-4ee2-ba16-fc174b6bc585">
+<FileCreatedDateTime>20200412075334</FileCreatedDateTime>
+<Firstname>Tripp</Firstname>
+<Lastname>Gordon</Lastname>
+<Address>19259 North 61st Drive</Address>
+<City>Glendale</City>
+<State>AZ</State>
+<Zip>85308</Zip>
+<orderTotal>24</orderTotal>
+<orderItems>14</orderItems>
+<expectedDelivery>20200825041555</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>bradl@yahoo.com</Email>
+</order>
+<order id="3ff31252-e2a0-423b-b7b5-740e0d34069c">
+<FileCreatedDateTime>20200813064136</FileCreatedDateTime>
+<Firstname>Kamren</Firstname>
+<Lastname>Wood</Lastname>
+<Address>3616 Echo Lane</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37218</Zip>
+<orderTotal>68</orderTotal>
+<orderItems>67</orderItems>
+<expectedDelivery>20200823011343</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="d5b957fa-f18d-4a0a-bdc9-40decf576f02">
+<FileCreatedDateTime>20200622041733</FileCreatedDateTime>
+<Firstname>Hector</Firstname>
+<Lastname>Horne</Lastname>
+<Address>410 Fairlea Drive</Address>
+<City>Edgewater</City>
+<State>MD</State>
+<Zip>21037</Zip>
+<orderTotal>762</orderTotal>
+<orderItems>40</orderItems>
+<expectedDelivery>20200325073112</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>garyjb@msn.com</Email>
+</order>
+<order id="468f6145-a2b1-436d-8680-d7683d0109a7">
+<FileCreatedDateTime>20200616044212</FileCreatedDateTime>
+<Firstname>Kristian</Firstname>
+<Lastname>Little</Lastname>
+<Address>819 Beazer Lane</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37013</Zip>
+<orderTotal>459</orderTotal>
+<orderItems>25</orderItems>
+<expectedDelivery>20200315041455</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="6638dcf0-1350-4a19-a015-4a412abc42d9">
+<FileCreatedDateTime>20200222051031</FileCreatedDateTime>
+<Firstname>Orlando</Firstname>
+<Lastname>Gonzales</Lastname>
+<Address>6262 29th Street Northwest</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20015</Zip>
+<orderTotal>781</orderTotal>
+<orderItems>67</orderItems>
+<expectedDelivery>20200229055834</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="b25f9e4b-5fc5-4a9c-903e-1fb5dffc973f">
+<FileCreatedDateTime>20200826081312</FileCreatedDateTime>
+<Firstname>India</Firstname>
+<Lastname>Hammond</Lastname>
+<Address>3708 Fort Lincoln Drive Northeast</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20018</Zip>
+<orderTotal>977</orderTotal>
+<orderItems>93</orderItems>
+<expectedDelivery>20200822042232</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="853df691-78ed-4b7c-90f9-fa2c70092c2a">
+<FileCreatedDateTime>20200418045115</FileCreatedDateTime>
+<Firstname>Haiden</Firstname>
+<Lastname>Page</Lastname>
+<Address>8446 Coors Loop</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80005</Zip>
+<orderTotal>809</orderTotal>
+<orderItems>15</orderItems>
+<expectedDelivery>20200410062247</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="10b5b1fe-2825-41c9-aa08-0241d038f354">
+<FileCreatedDateTime>20200828042019</FileCreatedDateTime>
+<Firstname>Elyse</Firstname>
+<Lastname>Curtis</Lastname>
+<Address>6120 Southeast 84th Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73135</Zip>
+<orderTotal>882</orderTotal>
+<orderItems>19</orderItems>
+<expectedDelivery>20200119034210</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>sopwith@hotmail.com</Email>
+</order>
+<order id="c592e31a-a2ef-442c-8432-e211787c4871">
+<FileCreatedDateTime>20200324054117</FileCreatedDateTime>
+<Firstname>Leonardo</Firstname>
+<Lastname>Trevino</Lastname>
+<Address>7187 Holland Court</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80005</Zip>
+<orderTotal>461</orderTotal>
+<orderItems>18</orderItems>
+<expectedDelivery>20200221063922</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="2f5d7cd2-20b4-4d8b-822f-c1b69b5c0d8c">
+<FileCreatedDateTime>20200624024511</FileCreatedDateTime>
+<Firstname>Diego</Firstname>
+<Lastname>Richard</Lastname>
+<Address>882 Plantation Way</Address>
+<City>Montgomery</City>
+<State>AL</State>
+<Zip>36117</Zip>
+<orderTotal>62</orderTotal>
+<orderItems>38</orderItems>
+<expectedDelivery>20200523012730</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>dburrows@yahoo.com</Email>
+</order>
+<order id="707e27ec-5578-4b99-9ce9-1869d0c5b0d3">
+<FileCreatedDateTime>20200123012931</FileCreatedDateTime>
+<Firstname>Caitlin</Firstname>
+<Lastname>Lucas</Lastname>
+<Address>1054 Overton Lea Road</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37220</Zip>
+<orderTotal>806</orderTotal>
+<orderItems>74</orderItems>
+<expectedDelivery>20200723062826</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="dbe24583-bade-4fa1-808c-d1c4ca620b7a">
+<FileCreatedDateTime>20200118053824</FileCreatedDateTime>
+<Firstname>Deja</Firstname>
+<Lastname>Mccullough</Lastname>
+<Address>4012 Heritage Place Drive</Address>
+<City>Norman</City>
+<State>OK</State>
+<Zip>73072</Zip>
+<orderTotal>77</orderTotal>
+<orderItems>22</orderItems>
+<expectedDelivery>20200418014019</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="1369e7ec-a99d-4c33-a827-41509100b3d2">
+<FileCreatedDateTime>20200513055246</FileCreatedDateTime>
+<Firstname>Blaze</Firstname>
+<Lastname>Espinoza</Lastname>
+<Address>4525 West Frier Drive</Address>
+<City>Glendale</City>
+<State>AZ</State>
+<Zip>85301</Zip>
+<orderTotal>742</orderTotal>
+<orderItems>75</orderItems>
+<expectedDelivery>20200217043843</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="a9ff115b-3738-4b71-823f-ba2b04fc7540">
+<FileCreatedDateTime>20200210064417</FileCreatedDateTime>
+<Firstname>Dominique</Firstname>
+<Lastname>Zamora</Lastname>
+<Address>7250 Urban Drive</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80005</Zip>
+<orderTotal>10</orderTotal>
+<orderItems>22</orderItems>
+<expectedDelivery>20200122024319</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>bjornk@optonline.net</Email>
+</order>
+<order id="d84e35d8-ad58-46d6-971e-b4604c0c8030">
+<FileCreatedDateTime>20200229085734</FileCreatedDateTime>
+<Firstname>Callie</Firstname>
+<Lastname>Barrett</Lastname>
+<Address>534 Turpin Street</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99504</Zip>
+<orderTotal>822</orderTotal>
+<orderItems>13</orderItems>
+<expectedDelivery>20200521022225</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="550fcb5a-5c48-4823-b906-d27c110d0f15">
+<FileCreatedDateTime>20200310082221</FileCreatedDateTime>
+<Firstname>Trevor</Firstname>
+<Lastname>Castro</Lastname>
+<Address>25 Church Street</Address>
+<City>Pittsfield</City>
+<State>MA</State>
+<Zip>01201</Zip>
+<orderTotal>784</orderTotal>
+<orderItems>21</orderItems>
+<expectedDelivery>20200729032857</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="68acd991-8d9e-4482-8c40-f86cadc13681">
+<FileCreatedDateTime>20200425075835</FileCreatedDateTime>
+<Firstname>Tripp</Firstname>
+<Lastname>Pennington</Lastname>
+<Address>2464 Windham Hill Road</Address>
+<City>Townshend</City>
+<State>VT</State>
+<Zip>05359</Zip>
+<orderTotal>680</orderTotal>
+<orderItems>14</orderItems>
+<expectedDelivery>20200813043154</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>rasca@yahoo.ca</Email>
+</order>
+<order id="bb9f9e50-47f6-4a42-b551-86315c52a250">
+<FileCreatedDateTime>20200128032229</FileCreatedDateTime>
+<Firstname>Gerald</Firstname>
+<Lastname>Weiss</Lastname>
+<Address>4001 19th Place Northeast</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20018</Zip>
+<orderTotal>102</orderTotal>
+<orderItems>72</orderItems>
+<expectedDelivery>20200617065220</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>jdhedden@live.com</Email>
+</order>
+<order id="b1341ff9-1c71-4584-92e7-88b547ff4a56">
+<FileCreatedDateTime>20200712022817</FileCreatedDateTime>
+<Firstname>Zachery</Firstname>
+<Lastname>Cameron</Lastname>
+<Address>232 Maine Avenue</Address>
+<City>Panama City</City>
+<State>FL</State>
+<Zip>32401</Zip>
+<orderTotal>316</orderTotal>
+<orderItems>70</orderItems>
+<expectedDelivery>20200524053239</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="325ad842-15f3-4a0e-8dbf-cea0096376f1">
+<FileCreatedDateTime>20200710083214</FileCreatedDateTime>
+<Firstname>Juliet</Firstname>
+<Lastname>Santiago</Lastname>
+<Address>9636 Morar Road</Address>
+<City>Panama City</City>
+<State>FL</State>
+<Zip>32409</Zip>
+<orderTotal>627</orderTotal>
+<orderItems>57</orderItems>
+<expectedDelivery>20200114065155</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>rbarreira@outlook.com</Email>
+</order>
+<order id="b1916665-530d-4c9e-9e5e-983fa81dc7ab">
+<FileCreatedDateTime>20200411015616</FileCreatedDateTime>
+<Firstname>Mia</Firstname>
+<Lastname>Lang</Lastname>
+<Address>1870 A Street</Address>
+<City>Oroville</City>
+<State>CA</State>
+<Zip>95966</Zip>
+<orderTotal>313</orderTotal>
+<orderItems>35</orderItems>
+<expectedDelivery>20200819063142</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>fatelk@msn.com</Email>
+</order>
+<order id="227b66d3-91ac-4468-867e-3c63555fd736">
+<FileCreatedDateTime>20200823075120</FileCreatedDateTime>
+<Firstname>Kyleigh</Firstname>
+<Lastname>Buckley</Lastname>
+<Address>1025 Rose Anne Road</Address>
+<City>Glen Burnie</City>
+<State>MD</State>
+<Zip>21060</Zip>
+<orderTotal>429</orderTotal>
+<orderItems>99</orderItems>
+<expectedDelivery>20200210071441</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>sacraver@outlook.com</Email>
+</order>
+<order id="74ff3e2f-fc4f-4ad2-a6be-c987518bd053">
+<FileCreatedDateTime>20200414074423</FileCreatedDateTime>
+<Firstname>Jake</Firstname>
+<Lastname>Wall</Lastname>
+<Address>4408 Northwest 55th Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73112</Zip>
+<orderTotal>368</orderTotal>
+<orderItems>45</orderItems>
+<expectedDelivery>20200114014248</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="edd3bc0f-349a-4487-815f-b5f9e0400aec">
+<FileCreatedDateTime>20200327013753</FileCreatedDateTime>
+<Firstname>Malachi</Firstname>
+<Lastname>Byrd</Lastname>
+<Address>5170 Hickory Hollow Parkway</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37013</Zip>
+<orderTotal>142</orderTotal>
+<orderItems>12</orderItems>
+<expectedDelivery>20200112085634</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>portele@optonline.net</Email>
+</order>
+<order id="b5f36b54-694d-41d4-a922-1c0bd50be2df">
+<FileCreatedDateTime>20200612065843</FileCreatedDateTime>
+<Firstname>Gavyn</Firstname>
+<Lastname>Sims</Lastname>
+<Address>10367 West 55th Place</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80002</Zip>
+<orderTotal>817</orderTotal>
+<orderItems>53</orderItems>
+<expectedDelivery>20200217064414</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>rtanter@live.com</Email>
+</order>
+<order id="3f3c1a40-92bb-4007-b1ed-0c8655a58164">
+<FileCreatedDateTime>20200722074625</FileCreatedDateTime>
+<Firstname>Stanley</Firstname>
+<Lastname>Carpenter</Lastname>
+<Address>713 Ringgold Drive</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37207</Zip>
+<orderTotal>462</orderTotal>
+<orderItems>75</orderItems>
+<expectedDelivery>20200115081812</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>spadkins@comcast.net</Email>
+</order>
+<order id="55961757-dd53-4405-b0da-02fd8bdca514">
+<FileCreatedDateTime>20200619042143</FileCreatedDateTime>
+<Firstname>Cash</Firstname>
+<Lastname>Chandler</Lastname>
+<Address>60 Willow Lakes Drive</Address>
+<City>Savannah</City>
+<State>GA</State>
+<Zip>31419</Zip>
+<orderTotal>148</orderTotal>
+<orderItems>54</orderItems>
+<expectedDelivery>20200322042655</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>grothoff@aol.com</Email>
+</order>
+<order id="2161fe7d-5cc6-469b-bf9c-a2e5ddd20573">
+<FileCreatedDateTime>20200222045258</FileCreatedDateTime>
+<Firstname>Tristian</Firstname>
+<Lastname>Wall</Lastname>
+<Address>849 East Victoria Street</Address>
+<City>Carson</City>
+<State>CA</State>
+<Zip>90746</Zip>
+<orderTotal>839</orderTotal>
+<orderItems>78</orderItems>
+<expectedDelivery>20200714071048</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>naupa@optonline.net</Email>
+</order>
+<order id="82e82aa7-0c7f-457b-a61d-b23c56744c2a">
+<FileCreatedDateTime>20200513042029</FileCreatedDateTime>
+<Firstname>Jovany</Firstname>
+<Lastname>Perry</Lastname>
+<Address>243 New State Road</Address>
+<City>Manchester</City>
+<State>CT</State>
+<Zip>06042</Zip>
+<orderTotal>564</orderTotal>
+<orderItems>20</orderItems>
+<expectedDelivery>20200221012634</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>krueger@mac.com</Email>
+</order>
+<order id="4c4ae4e2-49ea-4bd6-8c5a-52ddee6688c3">
+<FileCreatedDateTime>20200319051251</FileCreatedDateTime>
+<Firstname>Marco</Firstname>
+<Lastname>Phillips</Lastname>
+<Address>175 Creek Road</Address>
+<City>Castleton</City>
+<State>VT</State>
+<Zip>05735</Zip>
+<orderTotal>449</orderTotal>
+<orderItems>55</orderItems>
+<expectedDelivery>20200610013116</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>ribet@verizon.net</Email>
+</order>
+<order id="6696c4d7-5998-4946-951d-7b66edc62893">
+<FileCreatedDateTime>20200720035331</FileCreatedDateTime>
+<Firstname>Alfonso</Firstname>
+<Lastname>Estes</Lastname>
+<Address>2307 East 72nd Avenue</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99507</Zip>
+<orderTotal>180</orderTotal>
+<orderItems>56</orderItems>
+<expectedDelivery>20200224063758</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="7de3a174-8e2b-4f66-a2ac-784873950cb0">
+<FileCreatedDateTime>20200112011527</FileCreatedDateTime>
+<Firstname>Maliyah</Firstname>
+<Lastname>Becker</Lastname>
+<Address>19091 Northeast 23rd Street</Address>
+<City>Harrah</City>
+<State>OK</State>
+<Zip>73045</Zip>
+<orderTotal>172</orderTotal>
+<orderItems>94</orderItems>
+<expectedDelivery>20200524051220</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="089de218-66a0-4cd7-9b7e-0e2ea4634fe5">
+<FileCreatedDateTime>20200729015639</FileCreatedDateTime>
+<Firstname>Destinee</Firstname>
+<Lastname>Barr</Lastname>
+<Address>8404 West Myrtle Avenue</Address>
+<City>Glendale</City>
+<State>AZ</State>
+<Zip>85305</Zip>
+<orderTotal>127</orderTotal>
+<orderItems>88</orderItems>
+<expectedDelivery>20200528042239</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>pakaste@aol.com</Email>
+</order>
+<order id="f182d486-b39d-4bb9-89a2-de903a815c73">
+<FileCreatedDateTime>20200712064739</FileCreatedDateTime>
+<Firstname>Emerson</Firstname>
+<Lastname>Wilkinson</Lastname>
+<Address>90 Peabody Street</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37210</Zip>
+<orderTotal>645</orderTotal>
+<orderItems>53</orderItems>
+<expectedDelivery>20200610081128</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>solomon@yahoo.com</Email>
+</order>
+<order id="52697222-959e-4c5f-9b56-0559c0dcf424">
+<FileCreatedDateTime>20200217084945</FileCreatedDateTime>
+<Firstname>Steve</Firstname>
+<Lastname>Garner</Lastname>
+<Address>4200 Northwest 59th Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73112</Zip>
+<orderTotal>237</orderTotal>
+<orderItems>74</orderItems>
+<expectedDelivery>20200124024720</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>jfreedma@att.net</Email>
+</order>
+<order id="a952f757-cbc8-48c4-9fae-e26b7039fd89">
+<FileCreatedDateTime>20200815083449</FileCreatedDateTime>
+<Firstname>Jaycee</Firstname>
+<Lastname>Ellison</Lastname>
+<Address>2506 West Madison Street</Address>
+<City>Louisville</City>
+<State>KY</State>
+<Zip>40211</Zip>
+<orderTotal>605</orderTotal>
+<orderItems>39</orderItems>
+<expectedDelivery>20200625064636</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>amichalo@att.net</Email>
+</order>
+<order id="2cc558b1-6a7a-4c52-badf-a3a6ae1baead">
+<FileCreatedDateTime>20200217055853</FileCreatedDateTime>
+<Firstname>Paris</Firstname>
+<Lastname>Lamb</Lastname>
+<Address>8063 Regency Drive</Address>
+<City>Pleasanton</City>
+<State>CA</State>
+<Zip>94588</Zip>
+<orderTotal>160</orderTotal>
+<orderItems>64</orderItems>
+<expectedDelivery>20200412081626</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="e6da72bb-2688-4f19-a988-ae9f7ed13d39">
+<FileCreatedDateTime>20200620074623</FileCreatedDateTime>
+<Firstname>Alonso</Firstname>
+<Lastname>Shaffer</Lastname>
+<Address>324 Tulip Oak Court</Address>
+<City>Linthicum Heights</City>
+<State>MD</State>
+<Zip>21090</Zip>
+<orderTotal>143</orderTotal>
+<orderItems>49</orderItems>
+<expectedDelivery>20200629064621</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>ismail@verizon.net</Email>
+</order>
+<order id="7db6ecc6-a4a2-45df-b497-1c912c89a201">
+<FileCreatedDateTime>20200124055617</FileCreatedDateTime>
+<Firstname>Briana</Firstname>
+<Lastname>Harmon</Lastname>
+<Address>449 15th Street Northeast</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20002</Zip>
+<orderTotal>187</orderTotal>
+<orderItems>12</orderItems>
+<expectedDelivery>20200714045731</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="61a00449-5a78-4bd7-a2d9-c2499bee422d">
+<FileCreatedDateTime>20200524012256</FileCreatedDateTime>
+<Firstname>Liana</Firstname>
+<Lastname>Garner</Lastname>
+<Address>88 Pine Valley Road</Address>
+<City>Savannah</City>
+<State>GA</State>
+<Zip>31404</Zip>
+<orderTotal>577</orderTotal>
+<orderItems>40</orderItems>
+<expectedDelivery>20200420012326</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="f5ca2e6a-16cd-47bb-9c81-ab4cae326f88">
+<FileCreatedDateTime>20200719083529</FileCreatedDateTime>
+<Firstname>Madyson</Firstname>
+<Lastname>Castaneda</Lastname>
+<Address>2436 Naples Avenue</Address>
+<City>Panama City</City>
+<State>FL</State>
+<Zip>32405</Zip>
+<orderTotal>718</orderTotal>
+<orderItems>16</orderItems>
+<expectedDelivery>20200727063955</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>richard@msn.com</Email>
+</order>
+<order id="e37038ef-ad16-4752-a425-545ab7cffd0a">
+<FileCreatedDateTime>20200824074326</FileCreatedDateTime>
+<Firstname>Miah</Firstname>
+<Lastname>Ballard</Lastname>
+<Address>6100 Bullard Drive</Address>
+<City>Oakland</City>
+<State>CA</State>
+<Zip>94611</Zip>
+<orderTotal>589</orderTotal>
+<orderItems>55</orderItems>
+<expectedDelivery>20200724042831</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="3325da2f-64e4-4041-bfca-cce7d1098570">
+<FileCreatedDateTime>20200717084232</FileCreatedDateTime>
+<Firstname>Lola</Firstname>
+<Lastname>Bright</Lastname>
+<Address>6081 Jay Street</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80003</Zip>
+<orderTotal>379</orderTotal>
+<orderItems>40</orderItems>
+<expectedDelivery>20200221075627</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="6456bf5e-bef0-401e-91c3-c622c16d085d">
+<FileCreatedDateTime>20200619071715</FileCreatedDateTime>
+<Firstname>Gabriella</Firstname>
+<Lastname>Evans</Lastname>
+<Address>2909 Flamstead Road</Address>
+<City>Chester</City>
+<State>VT</State>
+<Zip>05143</Zip>
+<orderTotal>203</orderTotal>
+<orderItems>35</orderItems>
+<expectedDelivery>20200523084855</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>improv@yahoo.com</Email>
+</order>
+<order id="a4ef1a7d-4358-4f7e-a975-7b454adb56d9">
+<FileCreatedDateTime>20200728063149</FileCreatedDateTime>
+<Firstname>Kaylee</Firstname>
+<Lastname>Montoya</Lastname>
+<Address>1816 14th Avenue</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37208</Zip>
+<orderTotal>102</orderTotal>
+<orderItems>23</orderItems>
+<expectedDelivery>20200518042440</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>jginspace@me.com</Email>
+</order>
+<order id="436b079c-0f00-4e99-80b5-c0797a2c4f40">
+<FileCreatedDateTime>20200219033348</FileCreatedDateTime>
+<Firstname>Elyse</Firstname>
+<Lastname>Johns</Lastname>
+<Address>46 Apel Place</Address>
+<City>Manchester</City>
+<State>CT</State>
+<Zip>06042</Zip>
+<orderTotal>783</orderTotal>
+<orderItems>32</orderItems>
+<expectedDelivery>20200726031258</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>kawasaki@aol.com</Email>
+</order>
+<order id="884cea2f-5952-4eed-80b9-7d821e11e50e">
+<FileCreatedDateTime>20200616012133</FileCreatedDateTime>
+<Firstname>Talon</Firstname>
+<Lastname>Ayers</Lastname>
+<Address>1136 Northwest 31st Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73118</Zip>
+<orderTotal>141</orderTotal>
+<orderItems>20</orderItems>
+<expectedDelivery>20200224063951</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>sopwith@yahoo.com</Email>
+</order>
+<order id="6c805b7d-1b8b-4ce5-809c-c6e5aacb9c11">
+<FileCreatedDateTime>20200515063715</FileCreatedDateTime>
+<Firstname>Tristan</Firstname>
+<Lastname>Cochran</Lastname>
+<Address>8101 Northwind Avenue</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99504</Zip>
+<orderTotal>999</orderTotal>
+<orderItems>24</orderItems>
+<expectedDelivery>20200316073246</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>openldap@yahoo.com</Email>
+</order>
+<order id="56db0536-757d-4a5d-9cd1-ef36a274f711">
+<FileCreatedDateTime>20200619082640</FileCreatedDateTime>
+<Firstname>Kyla</Firstname>
+<Lastname>Stewart</Lastname>
+<Address>536 Walters Farm Road</Address>
+<City>East Haven</City>
+<State>VT</State>
+<Zip>05837</Zip>
+<orderTotal>360</orderTotal>
+<orderItems>22</orderItems>
+<expectedDelivery>20200626034525</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>phyruxus@gmail.com</Email>
+</order>
+<order id="f7b5b406-1553-4c9f-888d-9e5c69c52130">
+<FileCreatedDateTime>20200627055736</FileCreatedDateTime>
+<Firstname>Felicity</Firstname>
+<Lastname>Kidd</Lastname>
+<Address>1333 Farragut Street Northwest</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20011</Zip>
+<orderTotal>611</orderTotal>
+<orderItems>49</orderItems>
+<expectedDelivery>20200726014937</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>brainless@comcast.net</Email>
+</order>
+<order id="07f0a44c-b9ef-4828-af3e-73721a12fb5e">
+<FileCreatedDateTime>20200219075810</FileCreatedDateTime>
+<Firstname>Esperanza</Firstname>
+<Lastname>Pierce</Lastname>
+<Address>1641 Kramer Street Northeast</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20002</Zip>
+<orderTotal>423</orderTotal>
+<orderItems>75</orderItems>
+<expectedDelivery>20200220051717</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>purvis@live.com</Email>
+</order>
+<order id="47834607-7105-4873-b167-549360628055">
+<FileCreatedDateTime>20200520083638</FileCreatedDateTime>
+<Firstname>Quincy</Firstname>
+<Lastname>Sloan</Lastname>
+<Address>4601 Reka Drive</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99508</Zip>
+<orderTotal>267</orderTotal>
+<orderItems>35</orderItems>
+<expectedDelivery>20200524043247</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="3bdabf65-68ec-4473-9925-1396dc386440">
+<FileCreatedDateTime>20200428061636</FileCreatedDateTime>
+<Firstname>Salvador</Firstname>
+<Lastname>Campos</Lastname>
+<Address>2409 Park Street</Address>
+<City>Selma</City>
+<State>CA</State>
+<Zip>93662</Zip>
+<orderTotal>473</orderTotal>
+<orderItems>94</orderItems>
+<expectedDelivery>20200523085229</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>corrada@aol.com</Email>
+</order>
+<order id="38dab987-7b7e-4b6b-8967-a8499aca224e">
+<FileCreatedDateTime>20200522084512</FileCreatedDateTime>
+<Firstname>Cindy</Firstname>
+<Lastname>Roman</Lastname>
+<Address>239 Eastern Avenue</Address>
+<City>Fayetteville</City>
+<State>AR</State>
+<Zip>72701</Zip>
+<orderTotal>814</orderTotal>
+<orderItems>70</orderItems>
+<expectedDelivery>20200713065738</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>jwarren@sbcglobal.net</Email>
+</order>
+<order id="23bb5b60-2c43-4987-9e02-af6f07a9d20f">
+<FileCreatedDateTime>20200514071914</FileCreatedDateTime>
+<Firstname>Saul</Firstname>
+<Lastname>Gross</Lastname>
+<Address>12371 Atlanta Highway</Address>
+<City>Montgomery</City>
+<State>AL</State>
+<Zip>36117</Zip>
+<orderTotal>684</orderTotal>
+<orderItems>60</orderItems>
+<expectedDelivery>20200226011754</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>gemmell@verizon.net</Email>
+</order>
+<order id="a7fd602a-e94c-40aa-9873-1c07b201c2f7">
+<FileCreatedDateTime>20200711011350</FileCreatedDateTime>
+<Firstname>Amiyah</Firstname>
+<Lastname>Wright</Lastname>
+<Address>15 Taft Street</Address>
+<City>Quincy</City>
+<State>MA</State>
+<Zip>02169</Zip>
+<orderTotal>525</orderTotal>
+<orderItems>39</orderItems>
+<expectedDelivery>20200127041356</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="7bb2fc03-32f3-46c5-bf30-415f1c80a16f">
+<FileCreatedDateTime>20200814083939</FileCreatedDateTime>
+<Firstname>Daniella</Firstname>
+<Lastname>Sanchez</Lastname>
+<Address>3 Carson Street</Address>
+<City>Chico</City>
+<State>CA</State>
+<Zip>95928</Zip>
+<orderTotal>451</orderTotal>
+<orderItems>87</orderItems>
+<expectedDelivery>20200213014754</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="d002e54b-2270-44e5-a939-f1647aa97e18">
+<FileCreatedDateTime>20200726055536</FileCreatedDateTime>
+<Firstname>Aydan</Firstname>
+<Lastname>Sanchez</Lastname>
+<Address>4250 North Valley Lake Drive</Address>
+<City>Fayetteville</City>
+<State>AR</State>
+<Zip>72703</Zip>
+<orderTotal>194</orderTotal>
+<orderItems>42</orderItems>
+<expectedDelivery>20200717054315</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>inico@comcast.net</Email>
+</order>
+<order id="4b7b2e1d-3de1-490b-9d73-6b626d42b7d9">
+<FileCreatedDateTime>20200116015549</FileCreatedDateTime>
+<Firstname>Gavyn</Firstname>
+<Lastname>Rocha</Lastname>
+<Address>1433 Bretton View Road</Address>
+<City>Annapolis</City>
+<State>MD</State>
+<Zip>21409</Zip>
+<orderTotal>391</orderTotal>
+<orderItems>56</orderItems>
+<expectedDelivery>20200526012533</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="3d3507db-9a81-4a69-b81d-08e7aa6b219b">
+<FileCreatedDateTime>20200714024642</FileCreatedDateTime>
+<Firstname>Mathew</Firstname>
+<Lastname>Galvan</Lastname>
+<Address>2400 Merry Street</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37208</Zip>
+<orderTotal>657</orderTotal>
+<orderItems>56</orderItems>
+<expectedDelivery>20200512055428</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="e9d8b3a8-2e67-405d-9bbb-f989f5a26659">
+<FileCreatedDateTime>20200810063940</FileCreatedDateTime>
+<Firstname>Gretchen</Firstname>
+<Lastname>Oneill</Lastname>
+<Address>1900 Lincoln Street</Address>
+<City>Savannah</City>
+<State>GA</State>
+<Zip>31401</Zip>
+<orderTotal>531</orderTotal>
+<orderItems>16</orderItems>
+<expectedDelivery>20200518062315</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>jrkorson@yahoo.ca</Email>
+</order>
+<order id="cf611b15-e575-47b5-9a7f-e6ed89857926">
+<FileCreatedDateTime>20200310072921</FileCreatedDateTime>
+<Firstname>Glenn</Firstname>
+<Lastname>Pierce</Lastname>
+<Address>4632 Vermont 15</Address>
+<City>Wolcott</City>
+<State>VT</State>
+<Zip>05680</Zip>
+<orderTotal>340</orderTotal>
+<orderItems>91</orderItems>
+<expectedDelivery>20200414054929</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>aglassis@yahoo.ca</Email>
+</order>
+<order id="c8168740-fb56-48f3-ae26-7a1d05805cdf">
+<FileCreatedDateTime>20200521013714</FileCreatedDateTime>
+<Firstname>Gracelyn</Firstname>
+<Lastname>Randolph</Lastname>
+<Address>6729 North 54th Avenue</Address>
+<City>Glendale</City>
+<State>AZ</State>
+<Zip>85301</Zip>
+<orderTotal>335</orderTotal>
+<orderItems>41</orderItems>
+<expectedDelivery>20200121072922</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="9149aa51-0f24-4d02-a2f9-4683b79a00c5">
+<FileCreatedDateTime>20200426074958</FileCreatedDateTime>
+<Firstname>June</Firstname>
+<Lastname>Peterson</Lastname>
+<Address>1536 North Main Street</Address>
+<City>Salinas</City>
+<State>CA</State>
+<Zip>93906</Zip>
+<orderTotal>673</orderTotal>
+<orderItems>85</orderItems>
+<expectedDelivery>20200426022718</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="81446945-1c2d-4ec2-b58e-70ff5b72289d">
+<FileCreatedDateTime>20200315045245</FileCreatedDateTime>
+<Firstname>Zayden</Firstname>
+<Lastname>Robertson</Lastname>
+<Address>189 Danforth Street</Address>
+<City>Framingham</City>
+<State>MA</State>
+<Zip>01701</Zip>
+<orderTotal>660</orderTotal>
+<orderItems>71</orderItems>
+<expectedDelivery>20200328043123</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>kodeman@sbcglobal.net</Email>
+</order>
+<order id="6c566300-7652-4ffb-b43a-ebddbe1b1f68">
+<FileCreatedDateTime>20200312055218</FileCreatedDateTime>
+<Firstname>Briley</Firstname>
+<Lastname>Hammond</Lastname>
+<Address>6231 North 67th Avenue</Address>
+<City>Glendale</City>
+<State>AZ</State>
+<Zip>85301</Zip>
+<orderTotal>278</orderTotal>
+<orderItems>95</orderItems>
+<expectedDelivery>20200124012039</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="25d17ef5-3948-48f6-97ac-5607b470b5ca">
+<FileCreatedDateTime>20200428071033</FileCreatedDateTime>
+<Firstname>Harrison</Firstname>
+<Lastname>Murray</Lastname>
+<Address>87 Horseshoe Drive</Address>
+<City>West Windsor</City>
+<State>VT</State>
+<Zip>05037</Zip>
+<orderTotal>108</orderTotal>
+<orderItems>80</orderItems>
+<expectedDelivery>20200517073354</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="9b6afc6d-68f2-4588-88cc-d84a6b241cb3">
+<FileCreatedDateTime>20200816072158</FileCreatedDateTime>
+<Firstname>Addison</Firstname>
+<Lastname>Cooper</Lastname>
+<Address>905 Richardson Vista Road</Address>
+<City>Anchorage</City>
+<State>AK</State>
+<Zip>99501</Zip>
+<orderTotal>194</orderTotal>
+<orderItems>13</orderItems>
+<expectedDelivery>20200716023843</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="d55fac0c-77b8-46c7-9114-cc39ef5f858a">
+<FileCreatedDateTime>20200617042532</FileCreatedDateTime>
+<Firstname>Tori</Firstname>
+<Lastname>Andrade</Lastname>
+<Address>5410 McLean Drive</Address>
+<City>Elk Grove</City>
+<State>CA</State>
+<Zip>95757</Zip>
+<orderTotal>538</orderTotal>
+<orderItems>63</orderItems>
+<expectedDelivery>20200221044137</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>harryh@gmail.com</Email>
+</order>
+<order id="0783c9af-c1ba-4393-8566-bbf164b0fe4d">
+<FileCreatedDateTime>20200121043251</FileCreatedDateTime>
+<Firstname>Kara</Firstname>
+<Lastname>Bentley</Lastname>
+<Address>310 West Trinity Lane</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37207</Zip>
+<orderTotal>924</orderTotal>
+<orderItems>59</orderItems>
+<expectedDelivery>20200623074731</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>portele@icloud.com</Email>
+</order>
+<order id="ca8ecaa6-c824-4132-8c10-24dbf1883653">
+<FileCreatedDateTime>20200713073743</FileCreatedDateTime>
+<Firstname>Angelica</Firstname>
+<Lastname>Fernandez</Lastname>
+<Address>6208 Ingalls Street</Address>
+<City>Arvada</City>
+<State>CO</State>
+<Zip>80003</Zip>
+<orderTotal>999</orderTotal>
+<orderItems>54</orderItems>
+<expectedDelivery>20200325054022</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>tubajon@live.com</Email>
+</order>
+<order id="09b772b6-1391-4d64-9a4c-e5830d27576d">
+<FileCreatedDateTime>20200117024946</FileCreatedDateTime>
+<Firstname>Desiree</Firstname>
+<Lastname>Smith</Lastname>
+<Address>1632 North Lunsford Avenue</Address>
+<City>Fayetteville</City>
+<State>AR</State>
+<Zip>72701</Zip>
+<orderTotal>652</orderTotal>
+<orderItems>60</orderItems>
+<expectedDelivery>20200518072851</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="10c02649-a565-489e-aa9f-4d52fdd67e44">
+<FileCreatedDateTime>20200418045146</FileCreatedDateTime>
+<Firstname>Dereon</Firstname>
+<Lastname>Kidd</Lastname>
+<Address>3825 West Muhammad Ali Boulevard</Address>
+<City>Louisville</City>
+<State>KY</State>
+<Zip>40212</Zip>
+<orderTotal>716</orderTotal>
+<orderItems>11</orderItems>
+<expectedDelivery>20200825054748</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>djupedal@yahoo.com</Email>
+</order>
+<order id="1e7669ee-64e7-4eec-acf0-bc5d3bb6e399">
+<FileCreatedDateTime>20200812042331</FileCreatedDateTime>
+<Firstname>Savion</Firstname>
+<Lastname>Romero</Lastname>
+<Address>7573 National Drive</Address>
+<City>Livermore</City>
+<State>CA</State>
+<Zip>94550</Zip>
+<orderTotal>116</orderTotal>
+<orderItems>71</orderItems>
+<expectedDelivery>20200116045522</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="fac0ba5b-3e0d-4921-bb2b-8025c5a343ca">
+<FileCreatedDateTime>20200426043931</FileCreatedDateTime>
+<Firstname>Kristopher</Firstname>
+<Lastname>Curry</Lastname>
+<Address>468 Raymond Drive</Address>
+<City>Ione</City>
+<State>CA</State>
+<Zip>95640</Zip>
+<orderTotal>952</orderTotal>
+<orderItems>17</orderItems>
+<expectedDelivery>20200218042055</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="03841c7d-790f-4509-902d-3ee6d39ee9e4">
+<FileCreatedDateTime>20200310061334</FileCreatedDateTime>
+<Firstname>Adalynn</Firstname>
+<Lastname>Peck</Lastname>
+<Address>3072 The Alameda</Address>
+<City>Concord</City>
+<State>CA</State>
+<Zip>94519</Zip>
+<orderTotal>675</orderTotal>
+<orderItems>77</orderItems>
+<expectedDelivery>20200718073510</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>danzigism@yahoo.ca</Email>
+</order>
+<order id="7007b597-d321-4c2a-8e35-e80a381dfbd1">
+<FileCreatedDateTime>20200428082552</FileCreatedDateTime>
+<Firstname>Angelo</Firstname>
+<Lastname>White</Lastname>
+<Address>5 Yerxa Road</Address>
+<City>Cambridge</City>
+<State>MA</State>
+<Zip>02140</Zip>
+<orderTotal>174</orderTotal>
+<orderItems>82</orderItems>
+<expectedDelivery>20200511051731</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>naupa@hotmail.com</Email>
+</order>
+<order id="69189e36-1e2b-4bdc-8b2c-96c8ffeb319e">
+<FileCreatedDateTime>20200120053521</FileCreatedDateTime>
+<Firstname>Jovanny</Firstname>
+<Lastname>Cameron</Lastname>
+<Address>7 Cloutman Street</Address>
+<City>Salem</City>
+<State>MA</State>
+<Zip>01970</Zip>
+<orderTotal>764</orderTotal>
+<orderItems>46</orderItems>
+<expectedDelivery>20200414023120</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="c583cb16-c8e9-48e5-a8e2-f7ec3a76de8a">
+<FileCreatedDateTime>20200719014815</FileCreatedDateTime>
+<Firstname>Kierra</Firstname>
+<Lastname>Torres</Lastname>
+<Address>125 Summer Street</Address>
+<City>Manchester</City>
+<State>CT</State>
+<Zip>06040</Zip>
+<orderTotal>540</orderTotal>
+<orderItems>76</orderItems>
+<expectedDelivery>20200821022750</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>mschwartz@icloud.com</Email>
+</order>
+<order id="a01c0427-8cd7-41b4-b815-0fded88cb658">
+<FileCreatedDateTime>20200526074214</FileCreatedDateTime>
+<Firstname>Savanah</Firstname>
+<Lastname>Potter</Lastname>
+<Address>67 Steeplechase Drive</Address>
+<City>Manchester</City>
+<State>CT</State>
+<Zip>06040</Zip>
+<orderTotal>150</orderTotal>
+<orderItems>65</orderItems>
+<expectedDelivery>20200217042331</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="b9c4d029-ec76-4591-8e5d-5bd11d8efb4f">
+<FileCreatedDateTime>20200321071033</FileCreatedDateTime>
+<Firstname>Yaritza</Firstname>
+<Lastname>Lara</Lastname>
+<Address>3313 East Tecumseh Road</Address>
+<City>Norman</City>
+<State>OK</State>
+<Zip>73071</Zip>
+<orderTotal>142</orderTotal>
+<orderItems>59</orderItems>
+<expectedDelivery>20200717073229</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="7dab427c-2d36-4938-b7d8-50597c849816">
+<FileCreatedDateTime>20200426061035</FileCreatedDateTime>
+<Firstname>Iyana</Firstname>
+<Lastname>Sellers</Lastname>
+<Address>1920 Bladensburg Road Northeast</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20002</Zip>
+<orderTotal>255</orderTotal>
+<orderItems>73</orderItems>
+<expectedDelivery>20200310034638</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="f1261359-e9a4-4edf-a8fc-7eb5984cae49">
+<FileCreatedDateTime>20200320012421</FileCreatedDateTime>
+<Firstname>Gauge</Firstname>
+<Lastname>Romero</Lastname>
+<Address>2349 East Tall Oaks Drive</Address>
+<City>Fayetteville</City>
+<State>AR</State>
+<Zip>72703</Zip>
+<orderTotal>916</orderTotal>
+<orderItems>65</orderItems>
+<expectedDelivery>20200527032845</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="1a4786c2-ad4f-4581-bb03-c0addf1a4c15">
+<FileCreatedDateTime>20200423034523</FileCreatedDateTime>
+<Firstname>Margaret</Firstname>
+<Lastname>Joseph</Lastname>
+<Address>217 Northeast 1st Street</Address>
+<City>Moore</City>
+<State>OK</State>
+<Zip>73160</Zip>
+<orderTotal>599</orderTotal>
+<orderItems>26</orderItems>
+<expectedDelivery>20200620084435</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="491bd970-81f7-4074-9afb-36e502cde173">
+<FileCreatedDateTime>20200526084942</FileCreatedDateTime>
+<Firstname>Chase</Firstname>
+<Lastname>Meadows</Lastname>
+<Address>313 Wiley Street</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37115</Zip>
+<orderTotal>674</orderTotal>
+<orderItems>23</orderItems>
+<expectedDelivery>20200128054933</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>sumdumass@optonline.net</Email>
+</order>
+<order id="886065ed-6b3a-4e30-b9b5-2d3a944e4595">
+<FileCreatedDateTime>20200425021513</FileCreatedDateTime>
+<Firstname>Gilbert</Firstname>
+<Lastname>Norris</Lastname>
+<Address>7 River Otter Lane</Address>
+<City>Savannah</City>
+<State>GA</State>
+<Zip>31411</Zip>
+<orderTotal>308</orderTotal>
+<orderItems>56</orderItems>
+<expectedDelivery>20200723083058</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>farber@me.com</Email>
+</order>
+<order id="626831e7-e0ff-4991-9299-16d902b49365">
+<FileCreatedDateTime>20200424024841</FileCreatedDateTime>
+<Firstname>Saniyah</Firstname>
+<Lastname>Petty</Lastname>
+<Address>5545 Saddlewood Lane</Address>
+<City>Brentwood</City>
+<State>TN</State>
+<Zip>37027</Zip>
+<orderTotal>782</orderTotal>
+<orderItems>43</orderItems>
+<expectedDelivery>20200515054411</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>bigmauler@verizon.net</Email>
+</order>
+<order id="dc65ca04-d136-4750-93b7-c274c891c35f">
+<FileCreatedDateTime>20200614062418</FileCreatedDateTime>
+<Firstname>Naomi</Firstname>
+<Lastname>Nicholson</Lastname>
+<Address>2721 Lindsay Avenue</Address>
+<City>Louisville</City>
+<State>KY</State>
+<Zip>40206</Zip>
+<orderTotal>525</orderTotal>
+<orderItems>17</orderItems>
+<expectedDelivery>20200112013625</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="ab6fc92a-ff70-46f0-9dc5-b4d7578f725e">
+<FileCreatedDateTime>20200310021729</FileCreatedDateTime>
+<Firstname>Bailey</Firstname>
+<Lastname>Padilla</Lastname>
+<Address>737 Nelson Road</Address>
+<City>Ludlow</City>
+<State>VT</State>
+<Zip>05149</Zip>
+<orderTotal>82</orderTotal>
+<orderItems>36</orderItems>
+<expectedDelivery>20200713032424</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>burniske@verizon.net</Email>
+</order>
+<order id="c5e70225-1c6c-4ded-b031-a57202512f93">
+<FileCreatedDateTime>20200214072511</FileCreatedDateTime>
+<Firstname>Summer</Firstname>
+<Lastname>Franco</Lastname>
+<Address>1636 Church Street Northwest</Address>
+<City>Washington</City>
+<State>DC</State>
+<Zip>20036</Zip>
+<orderTotal>746</orderTotal>
+<orderItems>91</orderItems>
+<expectedDelivery>20200615015116</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="ff1f98cd-e928-4601-9668-ad51ea2ad1d2">
+<FileCreatedDateTime>20200329033438</FileCreatedDateTime>
+<Firstname>Malachi</Firstname>
+<Lastname>Weaver</Lastname>
+<Address>427 Gulf View Drive</Address>
+<City>Panama City Beach</City>
+<State>FL</State>
+<Zip>32413</Zip>
+<orderTotal>106</orderTotal>
+<orderItems>18</orderItems>
+<expectedDelivery>20200413071451</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email> </Email>
+</order>
+<order id="8c0a55c4-d86b-4c7f-b86e-e14cc6d8bb97">
+<FileCreatedDateTime>20200524012246</FileCreatedDateTime>
+<Firstname>Janet</Firstname>
+<Lastname>Munoz</Lastname>
+<Address>223 Main Street</Address>
+<City>Nashville</City>
+<State>TN</State>
+<Zip>37213</Zip>
+<orderTotal>134</orderTotal>
+<orderItems>62</orderItems>
+<expectedDelivery>20200119042158</expectedDelivery>
+<orderPaymentType>VISA</orderPaymentType>
+<Email>dmbkiwi@comcast.net</Email>
+</order>
+</orders>

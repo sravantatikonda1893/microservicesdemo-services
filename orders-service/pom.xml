@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.5.0</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  <groupId>com.microservicedemo</groupId>
+  <artifactId>orders-service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>orders-service</name>
+  <description>Demo project for Spring Boot micro services with Kafka</description>
+  <properties>
+    <java.version>11</java.version>
+    <org.springframework.data.version>3.0.3.RELEASE</org.springframework.data.version>
+    <querydsl.version>4.3.1</querydsl.version>
+    <mysema.maven.version>1.1.3</mysema.maven.version>
+    <mongodb-reactivestreams.version>4.1.0</mongodb-reactivestreams.version>
+    <projectreactor.version>3.2.0.RELEASE</projectreactor.version>
+    <mongodb-driver.version>4.0.5</mongodb-driver.version>
+    <!--set this to your docker acct name-->
+    <docker.image.prefix>sravankf244</docker.image.prefix>
+    <!--Set to name of project-->
+    <docker.image.name>orders-service</docker.image.name>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-mongodb</artifactId>
+      <version>${org.springframework.data.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-sync</artifactId>
+      <version>${mongodb-driver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-reactivestreams</artifactId>
+      <version>${mongodb-reactivestreams.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.querydsl</groupId>
+      <artifactId>querydsl-mongodb</artifactId>
+      <version>${querydsl.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.mongodb</groupId>
+          <artifactId>mongo-java-driver</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.querydsl</groupId>
+      <artifactId>querydsl-apt</artifactId>
+      <version>${querydsl.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <groupId>io.springfox</groupId>
+      <version>2.9.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>swagger-annotations</artifactId>
+      <groupId>io.swagger</groupId>
+      <version>1.5.21</version>
+    </dependency>
+    <dependency>
+      <artifactId>swagger-models</artifactId>
+      <groupId>io.swagger</groupId>
+      <version>1.5.21</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>springfox-swagger2</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>swagger-annotations</artifactId>
+          <groupId>io.swagger</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>swagger-models</artifactId>
+          <groupId>io.swagger</groupId>
+        </exclusion>
+      </exclusions>
+      <groupId>io.springfox</groupId>
+      <version>2.9.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.kafka</groupId>
+      <artifactId>spring-kafka</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.kafka</groupId>
+      <artifactId>spring-kafka-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+            </exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.20.0</version>
+        <configuration>
+          <!--<dockerHost>http://127.0.0.1:2375</dockerHost>-->
+          <dockerHost>unix:///var/run/docker.sock</dockerHost>
+          <verbose>true</verbose>
+          <images>
+            <image>
+              <name>${docker.image.prefix}/${docker.image.name}</name>
+              <build>
+                <dockerFileDir>${project.basedir}/target/dockerfile/</dockerFileDir>
+
+                <!--copies artifact to docker build dir in target-->
+                <assembly>
+                  <descriptorRef>artifact</descriptorRef>
+                </assembly>
+                <tags>
+                  <tag>latest</tag>
+                  <tag>${project.version}</tag>
+                </tags>
+              </build>
+            </image>
+          </images>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <scripts>
+            <script>file:///${project.basedir}/src/main/scripts/BuildDockerfile.groovy</script>
+          </scripts>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <!-- any version of Groovy \>= 1.5.0 should work here -->
+            <version>2.4.8</version>
+            <scope>runtime</scope>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <!-- Add plugin for Mongo Query DSL -->
+
+      <plugin>
+        <groupId>com.mysema.maven</groupId>
+        <artifactId>apt-maven-plugin</artifactId>
+        <version>1.1.3</version>
+        <dependencies>
+          <!-- https://mvnrepository.com/artifact/com.querydsl/querydsl-apt -->
+          <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-apt</artifactId>
+            <version>4.3.1</version>
+          </dependency>
+
+        </dependencies>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>process</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>target/generated-sources/apt</outputDirectory>
+              <processor>
+                org.springframework.data.mongodb.repository.support.MongoAnnotationProcessor
+              </processor>
+              <logOnlyOnError>true</logOnlyOnError>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>

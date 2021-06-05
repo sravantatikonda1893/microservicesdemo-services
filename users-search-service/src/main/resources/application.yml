@@ -1,0 +1,9 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: users-search-service
+logging:
+  file:
+    path: ${LOG_PATH:/Users/sravantatikonda/POC/container_mount/logs}

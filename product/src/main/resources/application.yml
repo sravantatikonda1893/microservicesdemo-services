@@ -1,0 +1,11 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: product
+
+
+logging:
+  file:
+    path: ${LOG_PATH:/Users/sravantatikonda/POC/container_mount/logs}

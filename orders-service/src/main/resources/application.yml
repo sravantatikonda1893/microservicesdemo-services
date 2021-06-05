@@ -1,0 +1,13 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: orders-service
+  data:
+    mongodb:
+      uri=mongodb+srv://mongodb:123@192.168.1.232/orders?retryWrites=true
+
+logging:
+  file:
+    path: ${LOG_PATH:/Users/sravantatikonda/POC/container_mount/logs}

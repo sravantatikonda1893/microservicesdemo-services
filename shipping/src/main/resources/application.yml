@@ -1,0 +1,30 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: shipping
+  datasource:
+    url: ${dbUrl:jdbc:sqlserver://192.168.1.232/{instanceName}:1433/shipping}
+    username: ${dbUsername:sqlserver}
+    password: ${dbPassword:123}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    jpa:
+      properties:
+        hibernate:
+          temp:
+            use_jdbc_metadata_defaults: false
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        ddl-auto: none
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+          physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      show-sql: true
+
+
+logging:
+  file:
+    path: ${LOG_PATH:/Users/sravantatikonda/POC/container_mount/logs}
