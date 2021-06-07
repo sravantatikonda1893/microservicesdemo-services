@@ -1,7 +1,7 @@
 
 CREATE SCHEMA poc_schm;
 
-create table poc_schm.user_recs
+create table poc_schm.users
 (
     user_id            serial primary key,
     first_name         varchar(20),
